@@ -2,22 +2,22 @@ package odev.atm;
 
 public class HesapIslemleriManager implements HesapIslemleriService {
   
- private double paraMiktarı;
+ 
  
    public HesapIslemleriManager( ) {
 	     
    }
    
 	@Override
-	public double paraYatırma(Musteri musteri,double paraMiktarı) {
-		double result= (musteri.getHesapBakiyesi()+paraMiktarı);
+	public double paraYatirma(Musteri musteri,double paraMiktari) {
+		double result= (musteri.getHesapBakiyesi()+paraMiktari);
 		 System.out.println("Güncel Bakiyeniz:"+result);
 		return result;
 	}
 
 	@Override
-	public double paraÇekme(Musteri musteri,double paraMiktarı) {
-		double result= (musteri.getHesapBakiyesi()-paraMiktarı);
+	public double paraCekme(Musteri musteri,double paraMiktari) {
+		double result= (musteri.getHesapBakiyesi()-paraMiktari);
 		 System.out.println("Güncel Bakiyeniz:"+result);
 		return result;
 	}

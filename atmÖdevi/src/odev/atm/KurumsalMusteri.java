@@ -2,7 +2,7 @@ package odev.atm;
 
 public class KurumsalMusteri extends Musteri{
 
-	private String sirket›smi;
+	private String sirketIsmi;
 
 	public KurumsalMusteri() {
 		super();
@@ -10,19 +10,19 @@ public class KurumsalMusteri extends Musteri{
 
 	 
 
-	public KurumsalMusteri(String tcNo, String adSoyad, double hesapBakiyesi, String musteriNo, String sirket›smi) {
+	public KurumsalMusteri(String tcNo, String adSoyad, double hesapBakiyesi, String musteriNo, String sirketIsmi) {
 		super(tcNo, adSoyad, hesapBakiyesi, musteriNo);
-		this.sirket›smi = sirket›smi;
+		this.sirketIsmi = sirketIsmi;
 	}
 
 
 
-	public String getSirket›smi() {
-		return sirket›smi;
+	public String getSirketIsmi() {
+		return sirketIsmi;
 	}
 
-	public void setSirket›smi(String sirket›smi) {
-		this.sirket›smi = sirket›smi;
+	public void setSirket›smi(String sirketIsmi) {
+		this.sirketIsmi = sirketIsmi;
 	}
 
 	 

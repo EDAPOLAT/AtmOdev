@@ -50,18 +50,18 @@ public class AnaSayfa {
 			    
 			   if(kurumsalMusteri.getMusteriNo().equals(musteriNo)){
 				   System.out.println("TC Kimlik No:"+kurumsalMusteri.getTcNo()+" "+" Ad Soyad:"+kurumsalMusteri.getAdSoyad()+" "+
-						   kurumsalMusteri.getSirketİsmi()+" "+"Hesap Bakiyesi"+kurumsalMusteri.getHesapBakiyesi());
+						   kurumsalMusteri.getSirketIsmi()+" "+"Hesap Bakiyesi"+kurumsalMusteri.getHesapBakiyesi());
 				   System.out.print("Para Yatırma İşlemi için 1 değerini , Para Çekme İşlemi için 2 değerini ekrana giriniz:  ");
 			       int islemNo = input.nextInt(); 
 			      if(islemNo==1) {
 			    	  System.out.println("Yatırmak istediğiniz para miktarını giriniz:");
 			    	  double paraMiktarı = input.nextDouble(); 
-			    	   hesapIslemleriManager.paraYatırma(kurumsalMusteri,paraMiktarı);
+			    	   hesapIslemleriManager.paraYatirma(kurumsalMusteri,paraMiktarı);
 			      }
 			      else if(islemNo==2) {
 			    	  System.out.println("Çekmek istediğiniz para miktarını giriniz:");
-			    	  double paraMiktarı = input.nextDouble(); 
-			    	   hesapIslemleriManager.paraÇekme(kurumsalMusteri,paraMiktarı);
+			    	  double paraMiktari = input.nextDouble(); 
+			    	   hesapIslemleriManager.paraCekme(kurumsalMusteri,paraMiktari);
 			      }
 				   
 				    
@@ -73,12 +73,12 @@ public class AnaSayfa {
 			      if(islemNo==1) {
 			    	  System.out.println("Yatırmak istediğiniz para miktarını giriniz:");
 			    	  double paraMiktarı = input.nextDouble(); 
-			    	   hesapIslemleriManager.paraYatırma(bireyselMusteri,paraMiktarı);
+			    	   hesapIslemleriManager.paraYatirma(bireyselMusteri,paraMiktarı);
 			      }
 			      else if(islemNo==2) {
 			    	  System.out.println("Çekmek istediğiniz para miktarını giriniz:");
-			    	  double paraMiktarı = input.nextDouble(); 
-			    	   hesapIslemleriManager.paraÇekme(bireyselMusteri,paraMiktarı);
+			    	  double paraMiktari = input.nextDouble(); 
+			    	   hesapIslemleriManager.paraCekme(bireyselMusteri,paraMiktari);
 			      }
 			   }
 			     
