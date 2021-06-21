@@ -1,10 +1,10 @@
 package odev.atm;
 
-public class HesapİşlemleriManager implements HesapİslemleriService {
+public class HesapIşlemleriManager implements HesapIslemleriService {
   
  private double paraMiktarı;
  
-   public HesapİşlemleriManager( ) {
+   public HesapIşlemleriManager( ) {
 	     
    }
    

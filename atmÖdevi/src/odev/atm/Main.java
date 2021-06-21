@@ -28,7 +28,7 @@ public class Main {
 		  BireyselMusteri bireyselMusteri1=new BireyselMusteri("23232323","33333333333",500000,"Öznur Polat","Sivas -Merkez");
 		  BireyselMusteri bireyselMusteri2=new BireyselMusteri("24242424","44444444444",500000,"Neslişah Doğan","İzmir -Çeşme");
 		   
-		  HesapİşlemleriManager hesapIşlemleriManager=new HesapİşlemleriManager(  );
+		  HesapIşlemleriManager hesapIşlemleriManager=new HesapIşlemleriManager(  );
 
 		  
 		 
