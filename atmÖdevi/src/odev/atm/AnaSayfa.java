@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map; 
 import java.util.Scanner;
 
-public class Main {
+public class AnaSayfa {
 
 	public static void main(String[] args) {
 		  Musteri musteri=new Musteri();
@@ -28,7 +28,7 @@ public class Main {
 		  BireyselMusteri bireyselMusteri1=new BireyselMusteri("23232323","33333333333",500000,"Öznur Polat","Sivas -Merkez");
 		  BireyselMusteri bireyselMusteri2=new BireyselMusteri("24242424","44444444444",500000,"Neslişah Doğan","İzmir -Çeşme");
 		   
-		  HesapIşlemleriManager hesapIşlemleriManager=new HesapIşlemleriManager(  );
+		  HesapIslemleriManager hesapIslemleriManager=new HesapIslemleriManager(  );
 
 		  
 		 
@@ -56,12 +56,12 @@ public class Main {
 			      if(islemNo==1) {
 			    	  System.out.println("Yatırmak istediğiniz para miktarını giriniz:");
 			    	  double paraMiktarı = input.nextDouble(); 
-			    	   hesapIşlemleriManager.paraYatırma(kurumsalMusteri,paraMiktarı);
+			    	   hesapIslemleriManager.paraYatırma(kurumsalMusteri,paraMiktarı);
 			      }
 			      else if(islemNo==2) {
 			    	  System.out.println("Çekmek istediğiniz para miktarını giriniz:");
 			    	  double paraMiktarı = input.nextDouble(); 
-			    	   hesapIşlemleriManager.paraÇekme(kurumsalMusteri,paraMiktarı);
+			    	   hesapIslemleriManager.paraÇekme(kurumsalMusteri,paraMiktarı);
 			      }
 				   
 				    
@@ -73,12 +73,12 @@ public class Main {
 			      if(islemNo==1) {
 			    	  System.out.println("Yatırmak istediğiniz para miktarını giriniz:");
 			    	  double paraMiktarı = input.nextDouble(); 
-			    	   hesapIşlemleriManager.paraYatırma(bireyselMusteri,paraMiktarı);
+			    	   hesapIslemleriManager.paraYatırma(bireyselMusteri,paraMiktarı);
 			      }
 			      else if(islemNo==2) {
 			    	  System.out.println("Çekmek istediğiniz para miktarını giriniz:");
 			    	  double paraMiktarı = input.nextDouble(); 
-			    	   hesapIşlemleriManager.paraÇekme(bireyselMusteri,paraMiktarı);
+			    	   hesapIslemleriManager.paraÇekme(bireyselMusteri,paraMiktarı);
 			      }
 			   }
 			     
