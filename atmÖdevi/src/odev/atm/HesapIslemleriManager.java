@@ -1,12 +1,8 @@
 package odev.atm;
 
 public class HesapIslemleriManager implements HesapIslemleriService {
+   
   
- 
- 
-   public HesapIslemleriManager( ) {
-	     
-   }
    
 	@Override
 	public double paraYatirma(Musteri musteri,double paraMiktari) {
